@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="2" time="16.292417">
+<testcase classname="To validate the login functionality." name="To validate login with invalid crendentials." time="9.460855">
+<skipped><![CDATA[Given user is in facebook login page........................................passed
+When user enter invalid name and passsword..................................undefined
+And use click login button..................................................skipped
+When user enter location and no of rooms and "<checkin>" and "<checkout>" and adults..skipped
+And user click search button................................................skipped
+And user select the available hotel by radiobutton and click continue.......skipped
+When user enter "<firstname>" and "<lastname>" and "<address>" and "<creditcard>" and creditcardtype and ccexpirymonth and ccexpiryyear and "<cvv>".skipped
+And user click book now.....................................................skipped
+]]></skipped>
+</testcase>
+<testcase classname="To validate the login functionality." name="To validate login with invalid crendentials." time="6.831562">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at org.stepdefinition.Stepdefinition.user_enter_invalid_and(Stepdefinition.java:31)&#13;&#10;&#9;at ✽.user enter invalid &quot;MadhanGovind&quot; and &quot;Madhan@21&quot;(file:src/test/resources/Features/Login.feature:5)&#13;&#10;"><![CDATA[Given user is in facebook login page........................................passed
+When user enter invalid "MadhanGovind" and "Madhan@21"......................failed
+And use click login button..................................................skipped
+When user enter location and no of rooms and "09/03/2021" and "10/03/2021" and adults..skipped
+And user click search button................................................skipped
+And user select the available hotel by radiobutton and click continue.......skipped
+When user enter "karthi" and "g" and "krishnagiri" and "1234567891234567" and creditcardtype and ccexpirymonth and ccexpiryyear and "123".skipped
+And user click book now.....................................................skipped
+Then user check the order no print or not...................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.stepdefinition.Stepdefinition.user_enter_invalid_and(Stepdefinition.java:31)
+	at ✽.user enter invalid "MadhanGovind" and "Madhan@21"(file:src/test/resources/Features/Login.feature:5)
+]]></failure>
+</testcase>
+</testsuite>
